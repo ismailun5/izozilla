@@ -1,0 +1,17 @@
+Proje 2: 
+---------------
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız. Big-O gösterimini yazınız.
+
+SOLUTION:
+----------
+Merge Sort yöntemi ile sıralama yaparken diziyi ikiye ayırarak sıralıyor ve en sonunda birleştiriyoruz.
+
+1:  [16,21,11]---[8,12,22] 
+2: [16,21,11]---[8,12,22] 
+3: [16,21]-[11]---[8,12]-[22]
+4: [16]-[21]-[11]---[8]-[12]-[22] Diziyi tek elemanlı dizeler olacak şekilde parçaladıktan sonra sıralayarak birleştiriyoruz.
+5: [11]-[16]-[21]---[8]-[12]-[22] 
+6: [11,16,21]---[8,12,22]
+7: [8,11,12,16,21,22]
