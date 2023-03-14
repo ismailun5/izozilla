@@ -1,0 +1,35 @@
+Proje 1
+------------------------
+[22,27,16,2,18,6] -> Insertion Sort
+
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+Big-O gösterimini yazınız.
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+*Average case: Aradığımız sayının ortada olması
+*Worst case: Aradığımız sayının sonda olması
+*Best case: Aradığımız sayının dizinin en başında olması.
+
+
+
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+
+
+SOLUTION1:
+-----------
+1. sayı ile en küçük sayıyı belileriz. Daha sonrasında bu ikisini yer değiştiririz.[2,27,16,22,18,6]
+Sonra diğer sayılarıda kontrol edip 2. en küçük sayı ile o sayının yeri değişir.[2,6,16,22,18,27]
+devam eder... [2,6,16,18,22,27] işlem tamamlanır.
+
+Big-O: O(n^2)dir ve Time Comlexity:18 sayısı için kontrol ettiğimizde 18'in sıralamna yapıldıktan sonra dizinin medyanı olduğu için AVARAGE CASE'dir.
+
+SOLUTION2:
+-----------
+
+STEP1: [2,3,5,8,7,9,4,15,6] -> 2 ile 7
+STEP2: [2,3,4,8,7,9,5,15,6] -> 4 İLE 5
+STEP3: [2,3,4,5,7,9,8,15,6] -> 5 ile 8
+STEP4: [2,3,4,5,6,9,8,15,7] -> 6 ile 7 yer değiştirir.
